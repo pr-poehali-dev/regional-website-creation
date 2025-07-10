@@ -610,6 +610,348 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Government Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Правительство региона
+            </h2>
+            <p className="text-lg text-gray-600">
+              Состав правительства и структура исполнительной власти
+            </p>
+          </div>
+
+          {/* Government Leadership */}
+          <div className="mb-12">
+            <div className="bg-white rounded-xl shadow-sm p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Руководство
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
+                      <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                        <Icon name="Crown" size={24} className="text-white" />
+                      </div>
+                      <div>
+                        <div className="font-semibold text-gray-900">
+                          Глава региона
+                        </div>
+                        <div className="text-sm text-gray-600">
+                          Высшее должностное лицо
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
+                      <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
+                        <Icon name="User" size={24} className="text-white" />
+                      </div>
+                      <div>
+                        <div className="font-semibold text-gray-900">
+                          Заместитель главы
+                        </div>
+                        <div className="text-sm text-gray-600">
+                          Координация деятельности
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-4 p-4 bg-green-50 rounded-lg">
+                      <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                        <Icon
+                          name="FileText"
+                          size={24}
+                          className="text-white"
+                        />
+                      </div>
+                      <div>
+                        <div className="font-semibold text-gray-900">
+                          Руководитель аппарата
+                        </div>
+                        <div className="text-sm text-gray-600">
+                          Административное управление
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-center">
+                  <img
+                    src="/img/93a0c4bf-a0db-4aed-bb37-25d178c8b782.jpg"
+                    alt="Правительство региона"
+                    className="rounded-lg shadow-lg max-w-md w-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Government Structure */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Структура правительства
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Ministry Cards */}
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <Icon name="Heart" size={24} className="text-red-500" />
+                    <Badge variant="outline">Министерство</Badge>
+                  </div>
+                  <CardTitle className="text-lg">Здравоохранение</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Медицинская помощь, охрана здоровья населения
+                  </p>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-500">Сотрудников: 15,420</span>
+                    <span className="text-green-600 font-medium">Активно</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <Icon
+                      name="GraduationCap"
+                      size={24}
+                      className="text-blue-500"
+                    />
+                    <Badge variant="outline">Министерство</Badge>
+                  </div>
+                  <CardTitle className="text-lg">Образование</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Дошкольное, общее и профессиональное образование
+                  </p>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-500">Сотрудников: 28,340</span>
+                    <span className="text-green-600 font-medium">Активно</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <Icon
+                      name="TrendingUp"
+                      size={24}
+                      className="text-green-500"
+                    />
+                    <Badge variant="outline">Министерство</Badge>
+                  </div>
+                  <CardTitle className="text-lg">Экономика</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Экономическое развитие, инвестиции, бизнес
+                  </p>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-500">Сотрудников: 890</span>
+                    <span className="text-green-600 font-medium">Активно</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <Icon
+                      name="Building"
+                      size={24}
+                      className="text-purple-500"
+                    />
+                    <Badge variant="outline">Министерство</Badge>
+                  </div>
+                  <CardTitle className="text-lg">Строительство</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Жилищное строительство, архитектура, ЖКХ
+                  </p>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-500">Сотрудников: 2,150</span>
+                    <span className="text-green-600 font-medium">Активно</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <Icon name="Leaf" size={24} className="text-green-600" />
+                    <Badge variant="outline">Министерство</Badge>
+                  </div>
+                  <CardTitle className="text-lg">Экология</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Охрана окружающей среды, природные ресурсы
+                  </p>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-500">Сотрудников: 560</span>
+                    <span className="text-green-600 font-medium">Активно</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <Icon name="Car" size={24} className="text-orange-500" />
+                    <Badge variant="outline">Министерство</Badge>
+                  </div>
+                  <CardTitle className="text-lg">Транспорт</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Дорожное хозяйство, транспортная инфраструктура
+                  </p>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-500">Сотрудников: 3,280</span>
+                    <span className="text-green-600 font-medium">Активно</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Government Departments */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Департаменты и службы
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <Icon
+                      name="Shield"
+                      size={20}
+                      className="mr-2 text-blue-600"
+                    />
+                    Департамент безопасности
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm">Служба охраны</span>
+                      <Icon
+                        name="CheckCircle"
+                        size={16}
+                        className="text-green-500"
+                      />
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm">Чрезвычайные ситуации</span>
+                      <Icon
+                        name="CheckCircle"
+                        size={16}
+                        className="text-green-500"
+                      />
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm">
+                        Антитеррористическая защита
+                      </span>
+                      <Icon
+                        name="CheckCircle"
+                        size={16}
+                        className="text-green-500"
+                      />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <Icon
+                      name="Users"
+                      size={20}
+                      className="mr-2 text-purple-600"
+                    />
+                    Департамент кадров
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm">Государственная служба</span>
+                      <Icon
+                        name="CheckCircle"
+                        size={16}
+                        className="text-green-500"
+                      />
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm">Кадровый резерв</span>
+                      <Icon
+                        name="CheckCircle"
+                        size={16}
+                        className="text-green-500"
+                      />
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm">Профессиональное развитие</span>
+                      <Icon
+                        name="CheckCircle"
+                        size={16}
+                        className="text-green-500"
+                      />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Government Stats */}
+          <div className="bg-white rounded-xl shadow-sm p-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Статистика правительства
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">12</div>
+                <div className="text-sm text-gray-600">Министерств</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">8</div>
+                <div className="text-sm text-gray-600">Департаментов</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">
+                  51,640
+                </div>
+                <div className="text-sm text-gray-600">
+                  Государственных служащих
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-orange-600 mb-2">
+                  127
+                </div>
+                <div className="text-sm text-gray-600">
+                  Подведомственных организаций
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
